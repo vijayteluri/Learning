@@ -7,6 +7,9 @@ resources:
           notebook_task:
             notebook_path: ../src/notebooks/Sample.ipynb
             source: WORKSPACE
+            base_parameters:
+              Catalog_name: ${var.Catalog_name}
+              Schema_name: ${var.Schema_name}
       queue:
         enabled: true
       performance_target: PERFORMANCE_OPTIMIZED
