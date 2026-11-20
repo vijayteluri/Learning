@@ -34,5 +34,6 @@ jobs:
       - run: databricks bundle deploy
         working-directory: sample-bundle
         env:
+          DATABRICKS_TOKEN: ${{ secrets.SP_TOKEN }}
           DATABRICKS_BUNDLE_TARGET: dev
 
