@@ -1,0 +1,12 @@
+resources:
+  jobs:
+    Sample_Job:
+      name: Sample Job
+      tasks:
+        - task_key: sample
+          notebook_task:
+            notebook_path: ../src/notebooks/Sample.ipynb
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
